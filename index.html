@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Finder Visualizer</title>
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Path Finder Visualizer</h1>
+    <div class="controls">
+      <select id="algorithm-select">
+        <option value="bfs">Breadth-First Search</option>
+        <option value="dfs">Depth-First Search</option>
+        <option value="dijkstra">Dijkstra's Algorithm</option>
+        <option value="astar">A* Search</option>
+      </select>
+      <button id="visualize-btn">Visualize</button>
+      <button id="clear-btn">Clear Board</button>
+    </div>
+  </div>
+  <div id="status-display"></div>
+  <div id="grid-container"></div>
+  <script type="module" src="public/script.js"></script>
+</body>
+</html>
